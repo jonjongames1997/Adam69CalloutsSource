@@ -12,6 +12,7 @@ namespace Adam69Callouts.Callouts
         public override bool OnBeforeCalloutDisplayed()
         {
             _spawnPoint = World.GetNextPositionOnStreet(MainPlayer.Position.Around(500f));
+            ShowCalloutAreaBlipBeforeAccepting(_spawnPoint, 100f);
             CalloutInterfaceAPI.Functions.SendMessage(this, "Reports of an Abandoned Vehicle");
             LSPD_First_Response.Mod.API.Functions.PlayScannerAudio("Adam69Callouts_Abandoned_Vehicle_Callout_Audio");
             CalloutMessage = "Abandoned Vehicle Reported";
