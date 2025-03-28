@@ -73,6 +73,6 @@ namespace Adam69Callouts
             ini.Write("Settings", "Language", Language);
         }
 
-        public static readonly string PluginVersion = "0.2.9.1";
+        public static readonly string PluginVersion = "0.3.0.0";
     }
 }
