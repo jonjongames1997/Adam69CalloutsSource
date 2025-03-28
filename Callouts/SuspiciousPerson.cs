@@ -76,6 +76,7 @@ namespace Adam69Callouts.Callouts
 
                     if (counter == 1)
                     {
+                        NativeFunction.Natives.TASK_TURN_PED_TO_FACE_ENTITY(suspect, MainPlayer, -1);
                         Game.DisplaySubtitle("~b~You~w~: Hey there, " + malefemale + ". What's going on? Why are you in this alleyway?");
                     }
                     if (counter == 2)
