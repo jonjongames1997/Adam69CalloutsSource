@@ -82,7 +82,8 @@ namespace Adam69Callouts.Callouts
 
                     if (counter == 1)
                     {
-                        suspect.Face(MainPlayer);
+                        NativeFunction.Natives.TASK_TURN_PED_TO_FACE_ENTITY(suspect, MainPlayer, -1);
+                        suspect.Tasks.PlayAnimation(new AnimationDictionary("josh_1_int-5"), "cs_josh_dual-5", -1f, AnimationFlags.Loop);
                         Game.DisplaySubtitle("~b~You~w~: What goin' on, feller? Have anything to drink today?");
                     }
                     if (counter == 2)
